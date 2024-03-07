@@ -1,0 +1,33 @@
+baseurl: ""
+
+title      : evo Mortgage Solutions - Expert in Bond Origination & Home Loans | Durban
+email      : verna.avenstrup@evogroup.co.za
+description: Looking for expert assistance with your home loan? Contact Verna Avenstrup at evo Mortgage Solutions today. Our seasoned property professionals specialize in home loans and property finance, committed to excellence and building long-term relationships. Discover tailored solutions for bonds, home loans, and origination with our passionate team. Trust evo Mortgage Solutions for your home financing needs.
+author     : Eben Roux / Pieter Oosthuizen
+
+analytics:
+  google: xxx
+
+collections:
+  portfolio:
+
+markdown: kramdown
+
+webserver_headers:
+  - - Access-Control-Allow-Origin
+    - "*"
+  - - Access-Control-Allow-Methods
+    - GET, OPTIONS, HEAD
+
+logo:
+  path: /assets/logo.png
+
+exclude: [node_modules,webpack-config.js,package.json,package-lock.json]
+
+group: evo Homeloans
+
+company: evo Mortgage Solutions
+
+url: https://evohomeloans.co.za/bond-originator/pretoria/evo-mortgage-solutions/
+
+address: 153 Sandvygie Cresent, Doornpoort, Pretoria, 0017

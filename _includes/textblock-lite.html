@@ -1,0 +1,58 @@
+<!-- Text-Block -->
+<section class="page-section" id="{{ site.data.sitetext.textblock-lite.section | default: "textblock" }}">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <!-- Main Heading H2 -->
+        <h2 class="section-heading text-uppercase">
+          {{ site.data.sitetext.textblock-lite.title | default: "Text Text-Block" }}</h2>
+        <!-- Main Heading H2 End -->
+        <!-- Main Heading H3 -->
+        {% if site.data.sitetext.textblock-lite.text %}
+        <h3 class="textblock-subheading">{{ site.data.sitetext.textblock-lite.text }}</h3>
+        {% endif %}
+        <!-- Main Heading H3 End -->
+      </div>
+    </div>
+    <!-- Paragraph Text H4  -->
+
+    <div class="row">
+      <div class="col-lg-1 text-center"></div>
+      <div class="col-lg-10 text-left">
+
+        <!-- Bullet List of Images and Text -->
+        <!-- <div class="container textblock-heading">
+
+          {% for textblock in site.data.sitetext.textblock-lite.list %}
+          <div class="row">
+
+            {% if textblock-lite.image %}
+            <div class="textblock-image col-1 p-1 text-center">
+              <i class="fas {{textblock-lite.image}} fa-2x"></i>
+            </div>
+            {% endif %}
+
+            <div class="textblock-title col align-items-center">
+              {{ textblock.title }}
+            </div>
+          </div>
+          {% endfor %}
+        </div> -->
+        <!-- Bullet List of Images and Text End -->
+        <div class="text-center">
+          <a class="btn btn-textblock-lite btn-xl text-uppercase js-scroll-trigger" href="/contact">Contact Us</a>
+
+        </div>
+        {% if site.data.sitetext.textblock-lite.footer %}
+        <div class="text-muted text-center w-100">
+          <p {{ site.data.sitetext.textblock-lite.footer | markdownify }}</p>
+        </div>{% endif %}
+      </div>
+      <div class="col-lg-1 text-center">
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End Text-Block -->
