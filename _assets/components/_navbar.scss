@@ -1,10 +1,11 @@
 #mainNav {
   background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adding drop shadow */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adding drop shadow */
 }
 
+/* Hamburger Menu*/
 #mainNav .navbar-toggler {
-  font-size: 24px; /* Increased size of the hamburger menu icon */
+  font-size: 20px; /* Increased size of the hamburger menu icon */
   padding: 15px; /* Increased padding for better touch area */
   text-transform: uppercase;
   color: #333; /* Adjusted color for better visibility */
@@ -27,7 +28,7 @@
 }
 
 #mainNav .navbar-brand > img {
-  height: 60px;
+  height: 50px;
 }
 
 #mainNav .navbar-nav {
