@@ -217,7 +217,7 @@ footer:
       # icon: "fab fa-twitter"  
       - url: https://www.facebook.com/Evomortgagesolutions/
         icon: "fab fa-facebook-f"
-      - url: https://api.whatsapp.com/send?phone=27834476674 
+      - url: https://api.whatsapp.com/send?phone=27834476674
         icon: "fab fa-whatsapp"
       # - url: https://instagram.com
       #   icon: "fab fa-instagram"
