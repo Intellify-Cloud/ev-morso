@@ -111,12 +111,12 @@ section {
 @media screen and (min-width: 1025px) {
   h1,
   h2 {
-    font-size: 34px; // Increased font size for golden ratio
+    font-size: 36px; // Increased font size for golden ratio
   }
 
   h3 {
     font-weight: 400;
-    font-size: 20px; // Increased font size for golden ratio
-    padding-bottom: calc(20px * 1.618); /* Golden ratio applied to font size */
+    font-size: 22px; // Increased font size for golden ratio
+    padding-bottom: calc(22px * 1.618); /* Golden ratio applied to font size */
   }
 }
