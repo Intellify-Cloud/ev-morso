@@ -1,51 +1,59 @@
-// Styling for the contact section
+/* Styling for the contact section */
 section#contact {
-  background-color: $gray-900;
-  background-image: url("#{$contact-image}");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("#{$contact-image}") center/cover no-repeat $gray-900;
   .section-heading {
     color: $white;
+    margin-bottom: 0.618em; /* Golden ratio */
+  }
+  .section-subheading {
+    color: $white;
+    margin-top: 0.618em; /* Golden ratio */
   }
   .form-group {
     margin-bottom: 25px;
-    input,
-    textarea {
+    input, textarea {
       padding: 20px;
+      &.form-control {
+        height: auto;
+        &::placeholder {
+          font-weight: 700;
+          color: $gray-400;
+          @include heading-font;
+        }
+      }
+      &.form-control.textarea {
+        height: 248px;
+      }
     }
-    input.form-control {
-      height: auto;
+    .form-control:focus {
+      border-color: $primary;
+      box-shadow: none;
     }
-    textarea.form-control {
-      height: 248px;
-    }
-  }
-  .form-control:focus {
-    border-color: $primary;
-    box-shadow: none;
-  }
-  ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-  :-moz-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-  ::-moz-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-  :-ms-input-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
   }
 }
 
 .contact-us p {
   margin-bottom: .25em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Adjusted line spacing for smaller screens */
+  section#contact .section-heading {
+    margin-bottom: 0.5em;
+  }
+
+  section#contact .section-subheading {
+    margin-top: 0.5em;
+  }
+
+  section#contact .form-group {
+    margin-bottom: 15px;
+    input, textarea {
+      padding: 15px;
+    }
+    .form-control.textarea {
+      height: 200px;
+    }
+  }
 }

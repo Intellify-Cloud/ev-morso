@@ -150,7 +150,7 @@ clients:
     
 team:
     title: "THE TEAM"
-    # text: "Lorem ipsum dolor sit amet consectetur."
+    text: "Connecting with us is just a click away!"
     # subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: team
     contact: 
