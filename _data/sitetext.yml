@@ -110,15 +110,21 @@ portfolio:
     
 about:
     title: "About Us"
-    text2: "Welcome to evo Mortgage Solutions, where expertise meets efficiency in the home loan industry. Led by Verna Avenstrüp (van Heerden), boasting 34 years of invaluable experience, including 18 years with a leading bank, and partnered by Sheugnette Scheepers, with two decades in bond origination, our team offers unparalleled knowledge and relationships within the industry.
-
-    We specialize in providing seamless solutions for purchasers, sellers, and real estate professionals, ensuring the fastest and most efficient service. Our mission is to secure the best possible offering on your home loan from our extensive network of banking partners. From paperwork preparation to structuring and submission of applications, we handle every aspect with precision.
-
-    As a trusted home loans brokerage, we are accredited by all major banks, including ABSA, FNB, Nedbank, and Standard Bank, as well as Investec, Sentinel Homes, and Hip Housing. This allows us to negotiate the most competitive loan and interest rates on your behalf effortlessly.
-
-    At evo Mortgage Solutions, we pride ourselves on our partnerships with reputable developers, attorneys, and estate agents, enabling us to guide our clients through the home-buying process seamlessly. Our affiliation with evo Home Loans provides us with access to additional resources, knowledge, and strong relationships with financial institutions, ensuring our clients receive unparalleled support from beginning to end.
-
-    Contact us today to experience the difference evo Mortgage Solutions can make in your home financing journey."
+    text2: "evo Mortgage Solutions is headed up by Verna Avenstrüp (van Heerden), who has more than 30 years’ experience in the home loan
+    industry, of which 18 years was with one of the major banks.  Partneredby Sheugnette Scheepers, who has more than 20 years’ experience in
+    the bond origination industry and Tania da Silva, who has recently joined our team as consultant.  Together our team brings a wealth of
+    knowledge, experience, and relationships within the industry to assist our customers, both purchasers, sellers, and real estate to get the
+    fastest, most efficient service and the best possible offering on your home loan from all our banking partners.  We assist in preparing all the
+    paperwork on your behalf and proper structuring and submission of the application through to negotiating best loan and interest rates to ensure
+    that you get the very best result, effortlessly. 
+    <br>
+    We are a home loans brokerage, accredited by all the major banks,
+    namely ABSA, FNB, Nedbank and Standard Bank, as well as Investec, Sentinel Homes and Hip Housing.
+    <br>
+    evo Mortgage Solutions have partnerships with reputable developers, attorneys, and estate agents in the industry to enable us to assist our
+    clients with the home-buying process from beginning to end. Our association with evo Home Loans gives them the added advantage of
+    the group’s resources, knowledge and strong relationships with the financial institutions.
+    financial institutions."
     
 clients:
     title: Bank Partners
