@@ -21,8 +21,8 @@ background: grey
     </div>
 
     <div class="col-md">
-    	<p>153 Sandvygie Cresent</p>
-    	<p>Doornpoort</p>
+    	<p>662 Hofmeyer Street</p>
+    	<p>Wingate Park</p>
     	<p>Pretoria</p>
     	<p>0017</p>
     </div>

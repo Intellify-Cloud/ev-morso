@@ -11,7 +11,7 @@ services:
         desc: "We submit Home Loan Applications to up to seven banks negotiating the best interest rates and deal in the market at any given time."
         icon: fas fa-home
         link: 
-          url: mailto:verna.avenstrup@evogroup.co.za ?subject=Mail from evo Mortgage Solutions website
+          url: mailto:verna.vanheerden@evogroup.co.za ?subject=Mail from evo Mortgage Solutions website
           text: "Email Us"
       - title: "Pre-qualification"
         desc: "We help you check your credit record, income and expenses to give you an accurate assessment of what you can afford. You will then know how likely you are to qualify for a bond."
@@ -23,7 +23,7 @@ services:
         desc: "I'm searching property portals and visiting show houses but have a few questions."
         icon: fas fa-search
         link: 
-          url: mailto:verna.avenstrup@evogroup.co.za?subject=Mail from evo evo Mortgage Solutions website
+          url: mailto:verna.vanheerden@evogroup.co.za?subject=Mail from evo evo Mortgage Solutions website
           text: "Email Me"
 
 articles:
@@ -110,9 +110,7 @@ portfolio:
     
 about:
     title: "About Us"
-    text2: "evo Mortgage Solutions is headed up by Verna Avenstrüp (van Heerden), who has more than 30 years’ experience in the home loan
-    industry, of which 18 years was with one of the major banks.  Partneredby Sheugnette Scheepers, who has more than 20 years’ experience in
-    the bond origination industry and Tania da Silva, who has recently joined our team as consultant.  Together our team brings a wealth of
+    text2: "evo Mortgage Solutions is headed up by Verna van Heerden, who has more than 30 years' experience in the home loan industry, of which 18 years was with one of the major banks.  Partnered by Sheugnette Scheepers, who has more than 20 years' experience in the bond origination industry.  Together our team brings a wealth of
     knowledge, experience, and relationships within the industry to assist our customers, both purchasers, sellers, and real estate to get the
     fastest, most efficient service and the best possible offering on your home loan from all our banking partners.  We assist in preparing all the
     paperwork on your behalf and proper structuring and submission of the application through to negotiating best loan and interest rates to ensure
@@ -165,13 +163,13 @@ team:
     section: team
     contact: 
     people:
-      - name: "Verna Avenstrup"
+      - name: "Verna van Heerden"
         role: "Property Finance Specialist"
-        image: assets/img/team/Verna Avenstrup - Evo Mortgage Solutions.png
+        image: assets/img/team/Verna van Heerden - Evo Mortgage Solutions.png
         social:
           - url: tel:083 447 6674
             icon: fas fa-phone
-          - url: mailto:verna.avenstrup@evogroup.co.za? subject=evo evo Mortgage Solutions Website Enquiry
+          - url: mailto:verna.vanheerden@evogroup.co.za? subject=evo evo Mortgage Solutions Website Enquiry
             icon: fas fa-envelope
           - url: https://www.facebook.com/Evomortgagesolutions/
             icon: fab fa-facebook-f
@@ -185,17 +183,6 @@ team:
           - url: tel:081 501 2767
             icon: fas fa-phone
           - url: mailto:sheugnettes@evogroup.co.za?subject=evo evo Mortgage Solutions Website Enquiry
-            icon: fas fa-envelope
-          - url: https://www.facebook.com/Evomortgagesolutions/
-            icon: fab fa-facebook-f
-
-      - name: "Tania da Silva"
-        role: "Property Finance Consultant"
-        image: assets/img/team/Tania da Silva - Evo Mortgage Solutions.jpg
-        social:
-          - url: tel:072 269 4166
-            icon: fas fa-phone
-          - url: mailto:tania.dasilva@evogroup.co.za?subject=evo evo Mortgage Solutions Website Enquiry
             icon: fas fa-envelope
           - url: https://www.facebook.com/Evomortgagesolutions/
             icon: fab fa-facebook-f
