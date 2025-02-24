@@ -147,7 +147,7 @@ clients:
 team:
     title: "THE TEAM"
     text: "Connecting with us is just a click away!"
-    # subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    # subtext: ..text below the images...
     section: team
     contact: 
     people:
@@ -188,7 +188,7 @@ testimonials:
         testimony: "I got excellent services in raising a bond for our house. I would recommend anyone to use their services. Many thanks and keep the good service going."
 
       - name: "Tyron Watkinson"
-        testimony: "Verna thank you very much for all your assistance throughout this process, you are a true professional! We would recommend your services to anyone looking to purchase a properry/properties. We look forward to doing business with you in the very near future."  
+        testimony: "Verna thank you very much for all your assistance throughout this process, you are a true professional! We would recommend your services to anyone looking to purchase a property/properties. We look forward to doing business with you in the very near future."  
       
 contact:
     title: "Contact Us"
@@ -208,4 +208,4 @@ footer:
       #   icon: "fab fa-instagram"
 
 
-# {{ site.data.sitetext.ex.ex | markdownify | default: example }}
+
