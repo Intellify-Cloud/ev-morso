@@ -33,7 +33,12 @@ module.exports = {
                 use: [
                     'style-loader',
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: (url) => !url.startsWith('/assets/')
+                        }
+                    },
                     'sass-loader'
                 ]
             },

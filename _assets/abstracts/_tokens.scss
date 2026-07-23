@@ -109,8 +109,8 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
 // --- Assets ---
-$header-image: "./img/hero.jpg";
-$contact-image: "./img/contact.png";
+$header-image: "/assets/img/hero/hero.jpg";
+$contact-image: "/assets/img/contact/contact.png";
 
 // --- Bootstrap Overrides ---
 $spacer: 1rem;
