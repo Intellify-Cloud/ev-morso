@@ -155,6 +155,9 @@ team:
       - name: "Verna van Heerden"
         role: "Property Finance Specialist"
         image: assets/img/team/Verna van Heerden - Evo Mortgage Solutions.jpg
+        phone_url: "tel:+27834476674"
+        whatsapp_url: "https://api.whatsapp.com/send?phone=27834476674"
+        email_url: "mailto:verna.vanheerden@evogroup.co.za?subject=evo%20Mortgage%20Solutions%20Website%20Enquiry"
         social:
           - url: tel:083 447 6674
             icon: fas fa-phone
@@ -168,6 +171,9 @@ team:
       - name: "Sheugnette Scheepers"
         role: "Property Finance Specialist"
         image: assets/img/team/Sheugnette - Evo Mortgage Solutions.jpg
+        phone_url: "tel:+27815012767"
+        whatsapp_url: "https://api.whatsapp.com/send?phone=27815012767"
+        email_url: "mailto:sheugnettes@evogroup.co.za?subject=evo%20Mortgage%20Solutions%20Website%20Enquiry"
         social:
           - url: tel:081 501 2767
             icon: fas fa-phone

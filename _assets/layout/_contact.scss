@@ -75,6 +75,13 @@ section#contact {
   .btn-primary {
     position: relative;
     z-index: 1;
+    border: none;
+    box-shadow: 0 4px 12px rgba($color-primary, 0.3);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 16px rgba($color-primary, 0.4);
+    }
   }
 }
 
@@ -142,8 +149,53 @@ section#contact {
   gap: $space-sm;
   margin-top: $space-sm;
 
-  .btn {
+  a.btn,
+  a.btn:visited {
     width: 100%;
+    border: 0 !important;
+    background-color: #0077b6 !important;
+    color: $white !important;
+    text-decoration: none;
+    box-shadow: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 0 !important;
+      background-color: #005f8f !important;
+      color: $white !important;
+      box-shadow: none;
+    }
+  }
+
+  a.btn:nth-child(2),
+  a.btn:nth-child(2):visited {
+    border: 0 !important;
+    background-color: #006494 !important;
+    color: $white !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 0 !important;
+      background-color: #004f73 !important;
+      color: $white !important;
+    }
+  }
+
+  a.btn:nth-child(3),
+  a.btn:nth-child(3):visited {
+    border: 0 !important;
+    background-color: #023e8a !important;
+    color: $white !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 0 !important;
+      background-color: #002f6c !important;
+      color: $white !important;
+    }
   }
 }
 

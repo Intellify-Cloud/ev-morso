@@ -31,8 +31,147 @@
   }
 }
 
+.team-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: $space-lg;
+}
+
+.team-card {
+  min-height: 420px;
+  overflow: hidden;
+  border: 1px solid $gray-200;
+  border-radius: $radius-lg;
+  background: $white;
+  box-shadow: $shadow-card;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-card__media {
+  flex: 0 0 50%;
+  min-height: 130px;
+  background: rgba($primary, 0.1);
+
+  img {
+    width: 100%;
+    height: 100%;
+    min-height: 130px;
+    display: block;
+    object-fit: cover;
+    object-position: center 28%;
+  }
+}
+
+.team-card__media--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary;
+  font-size: $type-size-2xl;
+}
+
+.team-card__body {
+  flex: 1;
+  padding: $space-xl;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    margin-bottom: $space-sm;
+    font-size: $type-size-lg;
+    font-weight: $type-weight-bold;
+  }
+
+  p {
+    max-width: none;
+    margin-bottom: $space-xs;
+    line-height: $line-height-base;
+  }
+}
+
+.team-card__role,
+.team-card__note {
+  color: $color-text-light;
+  font-size: $type-size-xs;
+}
+
+.team-card__note {
+  margin-top: $space-md;
+}
+
+.team-card__actions {
+  width: 100%;
+  display: grid;
+  gap: $space-sm;
+  margin-top: $space-md;
+
+  a.btn,
+  a.btn:visited {
+    width: 100%;
+    border: 0 !important;
+    background-color: #0077b6 !important;
+    color: $white !important;
+    text-decoration: none;
+    box-shadow: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 0 !important;
+      background-color: #005f8f !important;
+      color: $white !important;
+      box-shadow: none;
+    }
+  }
+
+  a.btn:nth-child(2),
+  a.btn:nth-child(2):visited {
+    background-color: #006494 !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #004f73 !important;
+    }
+  }
+
+  a.btn:nth-child(3),
+  a.btn:nth-child(3):visited {
+    background-color: #023e8a !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #002f6c !important;
+    }
+  }
+
+  i {
+    margin-right: $space-xs;
+  }
+}
+
 .highlight {
   @include highlight-background;
   padding: $space-md $space-lg;
   border-radius: $radius-md;
+}
+
+@media (max-width: $breakpoint-md) {
+  .team-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    min-height: auto;
+  }
+
+  .team-card__media {
+    flex-basis: auto;
+    height: 160px;
+  }
 }

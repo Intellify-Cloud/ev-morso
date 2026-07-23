@@ -31,13 +31,13 @@ background: grey
         <i class="fas fa-phone" aria-hidden="true"></i>
         Call
       </a>
-      <a class="btn btn-secondary" href="mailto:sheugnettes@evogroup.co.za?subject=evo%20Mortgage%20Solutions%20Website%20Enquiry">
-        <i class="fas fa-envelope" aria-hidden="true"></i>
-        Email
-      </a>
       <a class="btn btn-secondary" href="https://api.whatsapp.com/send?phone=27815012767" target="_blank" rel="noopener">
         <i class="fab fa-whatsapp" aria-hidden="true"></i>
         WhatsApp
+      </a>
+      <a class="btn btn-secondary" href="mailto:sheugnettes@evogroup.co.za?subject=evo%20Mortgage%20Solutions%20Website%20Enquiry">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+        Email
       </a>
     </div>
   </article>
@@ -48,17 +48,17 @@ background: grey
     </div>
     <h2>Verna</h2>
     <div class="contact-card__actions" aria-label="Contact Verna">
-      <a class="btn btn-primary" href="mailto:verna.vanheerden@evogroup.co.za?subject=evo%20Mortgage%20Solutions%20Website%20Enquiry">
-        <i class="fas fa-envelope" aria-hidden="true"></i>
-        Email
-      </a>
-      <a class="btn btn-secondary" href="tel:+27834476674">
+      <a class="btn btn-primary" href="tel:+27834476674">
         <i class="fas fa-phone" aria-hidden="true"></i>
         Call
       </a>
       <a class="btn btn-secondary" href="https://api.whatsapp.com/send?phone=27834476674" target="_blank" rel="noopener">
         <i class="fab fa-whatsapp" aria-hidden="true"></i>
         WhatsApp
+      </a>
+      <a class="btn btn-secondary" href="mailto:verna.vanheerden@evogroup.co.za?subject=evo%20Mortgage%20Solutions%20Website%20Enquiry">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+        Email
       </a>
     </div>
   </article>

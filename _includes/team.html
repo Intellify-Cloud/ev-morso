@@ -1,41 +1,55 @@
 <!-- Team -->
 <section class="page-section" id="{{ site.data.sitetext.team.section | default: "team" }}">
 <div class="container">
-  <div class="row">
-	<div class="col-lg-12 text-center">
-	  <h2 class="section-heading text-uppercase">{{ site.data.sitetext.team.title }}</h2>
-	  
-	  {% if site.data.sitetext.team.text %}
-      <h3 class="section-subheading text-muted">{{ site.data.sitetext.team.text }}</h3>
-	  {% endif %}
+  {% include section-heading.html title=site.data.sitetext.team.title text=site.data.sitetext.team.text %}
 
-	</div>
+  <div class="team-card-grid">
+    <article class="team-card team-card--hours">
+      <div class="team-card__media team-card__media--icon" aria-hidden="true">
+        <i class="far fa-clock"></i>
+      </div>
+      <div class="team-card__body">
+        <h3>Office Hours</h3>
+        <p>Monday to Friday</p>
+        <p>8am to 5pm</p>
+        <p class="team-card__note">Saturday, Sunday and public holidays closed</p>
+      </div>
+    </article>
+
+    {% for person in site.data.sitetext.team.people %}
+    <article class="team-card">
+      <div class="team-card__media">
+        <img src="{{ person.image | relative_url }}" alt="{{ person.name }}" loading="lazy">
+      </div>
+      <div class="team-card__body">
+        <h3>{{ person.name }}</h3>
+        <p class="team-card__role">{{ person.role }}</p>
+        <div class="team-card__actions" aria-label="Contact {{ person.name }}">
+          <a class="btn btn-primary" href="{{ person.phone_url }}">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <span>Call</span>
+          </a>
+          <a class="btn btn-primary" href="{{ person.whatsapp_url }}" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a class="btn btn-primary" href="{{ person.email_url }}">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
   </div>
-  <div class="row">
-  {% for person in site.data.sitetext.team.people %}
-	<div class="col-lg-4">
-	  <div class="team-member">
-		<img class="mx-auto rounded-circle" src="{{ person.image }}" alt="{{ person.name }}">
-		<h4>{{ person.name }}</h4>
-		<p class="text-muted">{{ person.role }}</p>
-		<ul class="list-inline social-buttons">
-		{% for network in person.social %}
-		  <li class="list-inline-item">
-			<a href="{{ network.url }}" target="_blank" rel="noopener" aria-label="{{ person.name }} - {{ network.icon }}">
-			  <i class="{{ network.icon }}" aria-hidden="true"></i>
-			</a>
-		  </li>
-		{% endfor %}
-		</ul>
-	  </div>
-	</div>
-  {% endfor %}
-  </div>
+
+  {% if site.data.sitetext.team.subtext %}
   <div class="row">
 	<div class="col-lg-8 mx-auto text-center">
 	  <div class="large text-muted">{{ site.data.sitetext.team.subtext | markdownify }}</div>
 	</div>
   </div>
+  {% endif %}
 </div>
 </section>
 <!-- End Team -->
