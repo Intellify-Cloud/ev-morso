@@ -1,14 +1,14 @@
 // Footer layout and responsive grid
 .footer {
   padding: $space-4xl 0 $space-3xl;
-  background-color: $gray-100;
-  border-top: 1px solid $gray-200;
+  background-color: $gray-900;
+  border-top: 1px solid rgba($white, 0.12);
 
   .footer-main {
     display: grid;
     gap: $space-3xl;
     padding-bottom: $space-3xl;
-    border-bottom: 1px solid $gray-200;
+    border-bottom: 1px solid rgba($white, 0.12);
 
     @include media-up($breakpoint-lg) {
       grid-template-columns: minmax(280px, 0.9fr) minmax(480px, 1.1fr);
@@ -24,11 +24,13 @@
       img {
         max-height: 60px;
         width: auto;
+        filter: grayscale(1);
+        opacity: 1;
       }
     }
 
     .footer-description {
-      color: $color-text-light;
+      color: rgba($white, 0.72);
       font-size: $type-size-sm;
       line-height: $line-height-base;
       max-width: 65ch;
@@ -50,8 +52,8 @@
         width: 44px;
         height: 44px;
         border-radius: $radius-full;
-        background-color: $gray-200;
-        color: $color-text;
+        background-color: rgba($white, 0.12);
+        color: rgba($white, 0.82);
         transition: $transition-default;
 
         &:hover,
@@ -78,7 +80,7 @@
         font-size: $type-size-md;
         font-weight: $type-weight-bold;
         margin-bottom: $space-md;
-        color: $color-text;
+        color: rgba($white, 0.92);
       }
 
       ul {
@@ -91,7 +93,7 @@
         }
 
         a {
-          color: $color-text-light;
+          color: rgba($white, 0.72);
           font-size: $type-size-xs;
           transition: $transition-default;
 
@@ -105,39 +107,49 @@
   }
 
   .footer-bottom {
-    display: flex;
-    flex-wrap: wrap;
+    width: min(100%, 1200px);
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: $space-md;
-    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     padding-top: $space-lg;
 
-    .footer-copyright {
-      width: 100%;
-      color: $color-text-light;
-      font-size: $type-size-xs;
+    .footer-bottom__item {
+      color: rgba($white, 0.68);
+      font-size: 13px;
+      line-height: $line-height-base;
       margin: 0;
-
-      @include media-up($breakpoint-md) {
-        width: auto;
-      }
-    }
-
-    .footer-legal {
-      width: 100%;
+      text-align: center;
       display: flex;
-      flex-wrap: wrap;
-      gap: $space-md;
-      font-size: $type-size-xs;
-      margin: 0;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+      white-space: nowrap;
 
-      @include media-up($breakpoint-md) {
-        width: auto;
+      &:first-child {
+        text-align: left;
+        justify-content: flex-start;
+      }
+
+      &:last-child {
+        text-align: right;
+        justify-content: flex-end;
+      }
+
+      p {
+        color: rgba($white, 0.68);
+        font-size: 13px;
+        line-height: $line-height-base;
+        margin: 0;
+        white-space: nowrap;
       }
 
       a {
-        color: $color-text-light;
-        font-size: $type-size-xs;
+        color: rgba($white, 0.68);
+        font-size: 13px;
+        line-height: $line-height-base;
+        white-space: nowrap;
         transition: $transition-default;
 
         &:hover,
@@ -145,29 +157,11 @@
           color: $primary;
         }
       }
-    }
 
-    .footer-credits {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: $space-md;
-      font-size: $type-size-xs;
-      margin: 0;
-
-      @include media-up($breakpoint-md) {
-        width: auto;
-      }
-
-      a {
-        color: $color-text-light;
-        font-size: $type-size-xs;
-        transition: $transition-default;
-
-        &:hover,
-        &:focus {
-          color: $primary;
-        }
+      span {
+        font-size: 13px;
+        line-height: $line-height-base;
+        white-space: nowrap;
       }
     }
   }
