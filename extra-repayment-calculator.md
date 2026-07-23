@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Extra Repayment Calculator
+description: See how extra home loan repayments can reduce interest and shorten your bond term.
+permalink: /extra-repayment-calculator/
 background: white
 ---
 

@@ -1,0 +1,21 @@
+<div class="card-deck {{ include.deck_class }}">
+  {% for item in include.items %}
+  <div class="card">
+    <div class="card-body text-center">
+      <span class="fa-stack fa-4x" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+        <i class="{{ item.icon | default: 'fas fa-shopping-cart' }} fa-stack-1x fa-inverse"></i>
+      </span>
+      <h4 class="card-title service-heading">{{ item.title | markdownify | remove: '<p>' | remove: '</p>' }}</h4>
+      {% if item.desc %}
+      <div class="text-muted">{{ item.desc | markdownify }}</div>
+      {% endif %}
+    </div>
+    {% if item.link %}
+    <div class="card-footer text-center">
+      <a href="{{ item.link.url }}" class="btn btn-primary" role="button">{{ item.link.text }}</a>
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>

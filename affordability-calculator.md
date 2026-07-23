@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Bond Affordability Calculator
+description: Estimate the home loan amount you may qualify for with evo Mortgage Solutions' bond affordability calculator.
+permalink: /affordability-calculator/
 background: white
 ---
 

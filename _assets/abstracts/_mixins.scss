@@ -1,0 +1,32 @@
+@use "tokens" as *;
+
+@mixin brand-font {
+  font-family: $font-family-base;
+}
+
+@mixin focus-ring {
+  box-shadow: $shadow-focus;
+}
+
+@mixin highlight-background {
+  background-color: $color-highlight-end;
+  background-image: $gradient-highlight;
+}
+
+@mixin media-up($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-down($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin container-narrow {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}

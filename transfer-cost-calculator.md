@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Transfer Cost Calculator
+description: Estimate bond registration and property transfer costs before buying a home in South Africa.
+permalink: /transfer-cost-calculator/
 background: white
 ---
 

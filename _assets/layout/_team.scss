@@ -1,23 +1,38 @@
-// Styling for the team section
 .team-member {
-  margin-bottom: 50px;
+  margin-bottom: $space-3xl;
   text-align: center;
+
   img {
-    width: 225px;
-    height: 225px;
-    border: 7px solid fade-out($black, 0.9);
+    width: 200px;
+    height: 200px;
+    border: 4px solid $gray-200;
+    border-radius: $radius-full;
+    object-fit: cover;
+    box-shadow: $shadow-sm;
+    transition: $transition-default;
   }
+
+  &:hover img {
+    border-color: $primary;
+    box-shadow: $shadow-md;
+  }
+
   h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
+    margin-top: $space-lg;
+    margin-bottom: $space-xs;
     text-transform: none;
+    font-weight: $type-weight-bold;
   }
+
   p {
     margin-top: 0;
+    color: $color-text-light;
+    font-size: $type-size-xs;
   }
 }
 
 .highlight {
-  background-color: #fff2ac;
-  background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+  @include highlight-background;
+  padding: $space-md $space-lg;
+  border-radius: $radius-md;
 }

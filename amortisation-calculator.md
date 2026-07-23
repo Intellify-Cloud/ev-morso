@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Extra Repayment Calculator
+title: Amortisation Calculator
+description: Use the amortisation calculator to understand how your home loan repayments are split between interest and capital over time.
+permalink: /amortisation-calculator/
 background: white
 ---
 

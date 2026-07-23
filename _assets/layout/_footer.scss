@@ -1,55 +1,306 @@
-// Styling for the footer
+// Footer layout and responsive grid
 .footer {
-  padding: 30px 0;
-  text-align: center;
-  span.copyright {
-    // font-size: 90%;
-    line-height: 50px;
-    text-transform: none;
-    @include heading-font;
+  padding: $space-4xl 0 $space-3xl;
+  background-color: $gray-100;
+  border-top: 1px solid $gray-200;
+
+  .footer-main {
+    display: grid;
+    gap: $space-3xl;
+    padding-bottom: $space-3xl;
+    border-bottom: 1px solid $gray-200;
+
+    @include media-up($breakpoint-lg) {
+      grid-template-columns: minmax(280px, 0.9fr) minmax(480px, 1.1fr);
+      gap: $space-4xl;
+    }
   }
-  ul.quicklinks {
-    font-size: 90%;
-    line-height: 40px;
-    margin-bottom: 0;
-    text-transform: none;
-    @include heading-font;
+
+  .footer-brand {
+    .footer-logo {
+      display: inline-block;
+      margin-bottom: $space-lg;
+
+      img {
+        max-height: 60px;
+        width: auto;
+      }
+    }
+
+    .footer-description {
+      color: $color-text-light;
+      font-size: $type-size-sm;
+      line-height: $line-height-base;
+      max-width: 65ch;
+      margin-bottom: $space-lg;
+    }
+
+    .footer-social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $space-md;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: $radius-full;
+        background-color: $gray-200;
+        color: $color-text;
+        transition: $transition-default;
+
+        &:hover,
+        &:focus {
+          background-color: $primary;
+          color: $white;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+
+  .footer-navigation {
+    display: grid;
+    gap: $space-xl;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @include media-up($breakpoint-md) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .footer-column {
+      h2 {
+        font-size: $type-size-md;
+        font-weight: $type-weight-bold;
+        margin-bottom: $space-md;
+        color: $color-text;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin-bottom: $space-sm;
+        }
+
+        a {
+          color: $color-text-light;
+          font-size: $type-size-sm;
+          transition: $transition-default;
+
+          &:hover,
+          &:focus {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-md;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: $space-lg;
+
+    .footer-copyright {
+      width: 100%;
+      color: $color-text-light;
+      font-size: $type-size-xs;
+      margin: 0;
+
+      @include media-up($breakpoint-md) {
+        width: auto;
+      }
+    }
+
+    .footer-legal {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: $space-md;
+      font-size: $type-size-xs;
+      margin: 0;
+
+      @include media-up($breakpoint-md) {
+        width: auto;
+      }
+
+      a {
+        color: $color-text-light;
+        transition: $transition-default;
+
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+      }
+    }
+
+    .footer-credits {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: $space-md;
+      font-size: $type-size-xs;
+      margin: 0;
+
+      @include media-up($breakpoint-md) {
+        width: auto;
+      }
+
+      a {
+        color: $color-text-light;
+        transition: $transition-default;
+
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+      }
+    }
   }
 }
 
-.whatsapp {
-  position: fixed;
-  right: 8px;
-  top: 85%;
-}
-.whatsapp h5 {
-  color: rgb(255, 255, 255);
-  background: #20b20f;
-  padding: 8px;
-  border-radius: 10px;
-}
-
+// Compatibility styles (used by includes/team.html)
 ul.social-buttons {
-  margin-bottom: 10px;
+  margin-bottom: $space-md;
+
   li {
     a {
-      font-size: 20px;
-      line-height: 50px;
+      font-size: $type-size-lg;
+      line-height: 48px;
       display: block;
-      width: 50px;
-      height: 50px;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-      color: white;
-      border-radius: 100%;
+      width: 48px;
+      height: 48px;
+      transition: $transition-default;
+      color: $white;
+      border-radius: $radius-full;
       outline: none;
-      background-color: #DB5B4F;
+      background-color: $color-social;
+      box-shadow: $shadow-sm;
+
       &:active,
       &:focus,
       &:hover {
         background-color: $primary;
+        transform: translateY(-2px);
+        box-shadow: $shadow-md;
       }
     }
+  }
+}
+
+// WhatsApp Floating Button
+.whatsapp-float {
+  position: fixed;
+  right: $space-lg;
+  bottom: $space-lg;
+  z-index: 1000;
+}
+
+.whatsapp-float-link {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+  background: #25d366;
+  color: $white;
+  text-decoration: none;
+  padding: $space-sm $space-md $space-sm $space-sm;
+  border-radius: $radius-pill;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+  transition: transform $transition-medium, box-shadow $transition-medium;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    text-decoration: none;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $white;
+    outline-offset: 3px;
+  }
+}
+
+.whatsapp-float-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 1;
+  color: $white;
+}
+
+.whatsapp-float-label {
+  font-weight: $type-weight-bold;
+  font-size: $type-size-xs;
+  white-space: nowrap;
+  @include heading-font;
+}
+
+// Pulse animation on load
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+  }
+  50% {
+    box-shadow: 0 4px 24px rgba(37, 211, 102, 0.55);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+  }
+}
+
+.whatsapp-float-link {
+  animation: whatsapp-pulse 3s ease-in-out 3;
+  animation-delay: 2s;
+}
+
+// Respect reduced motion preference
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float-link {
+    animation: none;
+    transition: none;
+  }
+}
+
+// Smaller on mobile
+@media (max-width: $breakpoint-sm) {
+  .whatsapp-float {
+    right: $space-md;
+    bottom: $space-md;
+  }
+
+  .whatsapp-float-link {
+    padding: $space-xs $space-sm $space-xs $space-xs;
+  }
+
+  .whatsapp-float-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  .whatsapp-float-label {
+    font-size: 12px;
   }
 }

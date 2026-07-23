@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Get online. Grow online. Intellify your business to reach new heights.",
   "scripts": {
-    "bundle": "webpack",
+    "bundle": "node --openssl-legacy-provider ./node_modules/webpack/bin/webpack.js",
     "serve": "jekyll serve --baseurl ''",
     "trace": "jekyll serve --trace --baseurl ''"
   },
@@ -24,7 +24,7 @@
     "url-loader": "^4.1.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "node-sass": "^4.12.0",
+    "sass": "1.77.8",
     "sass-loader": "^9.0.3",
     "jquery.easing": "^1.4.1"
   },

@@ -1,48 +1,75 @@
-/* Styling for the masthead */
 header.masthead {
   text-align: center;
-  color: white;
+  color: $white;
   background-image: url("#{$header-image}");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center right;
   background-size: cover;
-  padding: 100px 0; /* Adjusted padding for better spacing */
+  position: relative;
+  min-height: 80vh;
+  padding: 120px 0;
+  display: flex;
+  align-items: flex-end;
+
+  // Subtle overlay for readability
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
 
 header.masthead .intro-text {
-  max-width: 600px; /* Limit text width for better readability */
-  margin: 0 auto; /* Center text horizontally */
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 $space-md 7vh;
 }
 
 header.masthead .intro-text .intro-lead-in {
-  font-size: 24px;
+  font-size: $type-size-xl;
   font-style: italic;
-  margin-bottom: 20px;
+  margin-bottom: $space-md;
+  opacity: 0.95;
 }
 
 header.masthead .intro-text .intro-heading {
-  font-size: 60px;
-  font-weight: 700;
-  margin-bottom: 40px;
-  /* Add text shadow for better legibility */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: $type-size-hero;
+  font-weight: $type-weight-bold;
+  margin-bottom: $space-xl;
+  text-shadow: $shadow-hero-text;
+  line-height: $line-height-tight;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
+  header.masthead {
+    min-height: 80vh;
+    padding: 100px 0;
+  }
   header.masthead .intro-text .intro-heading {
-    font-size: 48px; /* Decrease font size for smaller screens */
+    font-size: $type-size-hero-tablet;
   }
 }
 
 @media (max-width: 576px) {
-  header.masthead .intro-text {
-    padding: 50px 15px; /* Adjust padding for smaller screens */
+  header.masthead {
+    min-height: 80vh;
+    padding: 80px 0;
   }
-
+  header.masthead .intro-text {
+    padding: 40px $space-md 6vh;
+  }
   header.masthead .intro-text .intro-heading {
-    font-size: 36px; /* Further decrease font size for smaller screens */
-    margin-bottom: 30px;
+    font-size: $type-size-hero-mobile;
+    margin-bottom: $space-lg;
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: $type-size-lg;
   }
 }

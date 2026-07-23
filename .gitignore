@@ -8,3 +8,9 @@ _site
 Gemfile.lock
 unused
 bootstrap-reference.html
+
+# Local-only notes and helper scripts
+designer.md
+deply.bat
+plans/
+plan*.md

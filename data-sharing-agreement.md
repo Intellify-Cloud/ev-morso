@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Data Sharing
+permalink: /data-sharing-agreement/
 background: grey
 ---
 <div class="col-lg-12 text-center">

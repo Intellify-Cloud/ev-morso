@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" aria-label="Primary navigation">
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       {%- if site.logo -%}
@@ -16,18 +16,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav text-uppercase ml-auto">
-        {%- for link in site.data.navigation.nav -%}
-        <li class="nav-item">
-          {%- if link.url -%}
-          <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
-          {%- else if link.section -%}
-          <a class="nav-link js-scroll-trigger" href="#{{ link.section }}">{{ link.title }}</a>
-          {%- else -%}
-          <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
-          {%- endif -%}
-        </li>
-        {% endfor %}
-        </li>
+        {% include nav-links.html section_prefix="#" %}
       </ul>
     </div>
   </div>
@@ -42,11 +31,9 @@
       <div class="intro-lead-in">{{ site.data.sitetext.header.title | markdownify }}</div>
       {%- endif -%}
       {%- if site.data.sitetext.header.text -%}
-      <div class="intro-heading text-uppercase">{{ site.data.sitetext.header.text | markdownify }}</div>
+      <h1 class="intro-heading text-uppercase">{{ site.data.sitetext.header.text | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
       {%- endif -%}
-      <!-- Contact Us Button -->
-      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/contact">Contact Us</a>
-      <!-- Contact Us Button End -->
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/contact/">Contact Us</a>
     </div>
   </div>
 </header>

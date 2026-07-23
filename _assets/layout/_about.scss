@@ -1,0 +1,41 @@
+.about-section {
+  padding-top: 72px;
+  padding-bottom: 48px;
+
+  .about-row {
+    justify-content: center;
+  }
+
+  .about-title-row {
+    margin-bottom: 10px;
+  }
+
+  .about-subtitle-row {
+    margin-bottom: 34px;
+  }
+
+  .section-heading,
+  .section-subheading {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1.3;
+  }
+
+  .about-copy {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      max-width: none;
+      margin: 0 auto;
+      line-height: 1.62;
+    }
+
+    br {
+      display: block;
+      content: "";
+      margin-top: 14px;
+    }
+  }
+}

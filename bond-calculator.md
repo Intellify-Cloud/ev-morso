@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Bond Calculator
+description: Calculate estimated monthly bond repayments for your home loan with evo Mortgage Solutions.
+permalink: /bond-calculator/
 background: white
 ---
 

@@ -1,13 +1,12 @@
-// Font Mixins
 @mixin serif-font {
-  font-family: 'Comfortaa', cursive;
+  @include brand-font;
 }
 @mixin script-font {
-  font-family: 'Comfortaa', cursive;
+  @include brand-font;
 }
 @mixin body-font {
-  font-family: 'Comfortaa', cursive;
+  @include brand-font;
 }
 @mixin heading-font {
-  font-family: 'Comfortaa', cursive;
+  @include brand-font;
 }

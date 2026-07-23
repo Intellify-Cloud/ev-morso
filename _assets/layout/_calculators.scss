@@ -1,50 +1,49 @@
-/* Styling for the services section */
 .calculators-heading {
-  margin: 30px 0;
+  margin: $space-2xl 0;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: $type-size-xl;
   font-weight: bold;
-  color: #333;
+  color: $color-text;
 }
 
 .calculators .card {
   border: none;
-  background-color: #00acc8;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  transition: all 0.3s ease;
+  background-color: $primary;
+  border-radius: $radius-card;
+  box-shadow: $shadow-card;
+  margin-bottom: $space-2xl;
+  transition: $transition-default ease;
 }
 
 .calculators .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: $shadow-card-hover;
 }
 
 .calculators .card-body {
   border: none;
-  padding: 30px;
+  padding: $space-2xl;
 }
 
 .calculators .card-footer {
   border: none;
   background: none;
-  padding: 20px;
+  padding: $space-lg;
   text-align: center;
 }
 
 .calculators .btn {
-  border-radius: 30px;
-  background-color: #fff;
-  color: #00acc8;
+  border-radius: $radius-pill;
+  background-color: $white;
+  color: $primary;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: $type-size-sm;
   text-transform: uppercase;
-  border: 2px solid #00acc8;
-  transition: all 0.3s ease;
+  border: 2px solid $primary;
+  transition: $transition-default ease;
 }
 
 .calculators .btn:hover {
-  background-color: #00acc8;
-  color: #fff;
+  background-color: $primary;
+  color: $white;
 }

@@ -1,18 +1,45 @@
 // Styling for the services section
 .service-heading {
-  margin: 15px 0;
+  margin: $space-md 0;
   text-transform: none;
+  font-weight: $type-weight-bold;
 }
 
 #services .card {
-  border: none
+  border: 1px solid $gray-200;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-card;
+  transition: $transition-default;
+  margin-bottom: $space-lg;
+
+  &:hover {
+    box-shadow: $shadow-card-hover;
+    transform: translateY(-2px);
+  }
+}
+
+#services .card .card-body {
+  padding: $space-xl;
 }
 
 #services .card .card-footer {
   border: none;
   background: none;
+  padding: 0 $space-xl $space-xl;
 }
-  
+
 #services .btn {
-  border-radius: 30px;
+  border-radius: $radius-md;
+}
+
+// Icon stack styling
+#services .fa-stack {
+  margin-bottom: $space-md;
+}
+
+// Card deck responsive
+.card-deck.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: $space-lg;
 }

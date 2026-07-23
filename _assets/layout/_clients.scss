@@ -1,19 +1,29 @@
 .brand-logo {
-  margin: 20px;
+  margin: $space-lg;
+}
+
+.client-logo {
+  height: 100px;
+
+  img {
+    max-height: 120px;
+  }
 }
 
 #clients .row {
-  margin-top: 50px;
+  margin-top: $space-3xl;
 }
 
 #clients img {
-  filter: rgb(161, 159, 143); /* IE6-9 */
-  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
-  filter: grayscale(0); /* Microsoft Edge and Firefox 35+ */
+  filter: grayscale(0.6);
+  -webkit-filter: grayscale(0.6);
+  transition: $transition-default;
+  opacity: 0.7;
 }
 
 /* Disable grayscale on hover */
 #clients img:hover {
   -webkit-filter: grayscale(0);
-  filter: none;
+  filter: grayscale(0);
+  opacity: 1;
 }

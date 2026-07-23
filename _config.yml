@@ -1,8 +1,11 @@
 baseurl: ""
+url: https://evomortgagesolutions.co.za
+lang: en-ZA
 
-title: evo Mortgage Solutions - Expert in Bond Origination & Home Loans | Durban
-email: verna.@evogroup.co.za
-description: Looking for expert assistance with your home loan? Contact Verna van Heerden at evo Mortgage Solutions today. Our seasoned property professionals specialize in home loans and property finance, committed to excellence and building long-term relationships. Discover tailored solutions for bonds, home loans, and origination with our passionate team. Trust evo Mortgage Solutions for your home financing needs.
+title: evo Mortgage Solutions - Bond Origination & Home Loans | Pretoria
+email: verna.vanheerden@evogroup.co.za
+phone: "+27834476674"
+description: Get expert home loan and bond origination assistance from evo Mortgage Solutions in Pretoria. Compare bank quotes, get pre-qualified, and secure competitive home finance with experienced property finance specialists.
 author: Eben Roux / Pieter Oosthuizen
 
 analytics:
@@ -27,7 +30,5 @@ exclude: [node_modules, webpack-config.js, package.json, package-lock.json]
 group: evo Homeloans
 
 company: evo Mortgage Solutions
-
-url: https://evohomeloans.co.za/bond-originator/pretoria/evo-mortgage-solutions/
 
 address: 662 Hofmeyer Street, Wingate Park, Pretoria, 0017

@@ -1,14 +1,25 @@
-// Styling for the services section
 .textblock-heading {
-    margin: 5px 0;
-    text-transform: none;
-    color: #01acc8;
+  margin: $space-sm 0;
+  text-transform: none;
+  color: $color-primary-alt;
+  font-weight: $type-weight-bold;
 }
 
 .textblock-image {
   min-width: 50px;
+  border-radius: $radius-md;
 }
 
 .textblock-title {
-  line-height: 2em;
+  line-height: 1.6;
+  font-weight: $type-weight-bold;
+}
+
+// Textblock content sections
+.textblock-section {
+  padding: $space-3xl 0;
+
+  + .textblock-section {
+    border-top: 1px solid $gray-200;
+  }
 }

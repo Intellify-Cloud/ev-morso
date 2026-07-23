@@ -1,27 +1,14 @@
 @charset "utf-8";
+@use "abstracts/tokens" as *;
+@use "abstracts/mixins" as *;
+
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
+$input-height:calc(#{$input-height-inner} + #{$input-height-border});
 @import "bootstrap/scss/mixins";
 
-$header-image: "./img/hero.jpg";
-$contact-image: "./img/contact.png";
-
-$primary: #00ACC8;
-$white: #fff;
-$black: #000;
-$input-height:calc(#{$input-height-inner} + #{$input-height-border});
-
-$spacer:1rem;
-$border-width:3px;
-$border-radius:0;
-$enable-rounded: false;
-$enable-shadows:false;
-$enable-gradients:false;
-
 @import "bootstrap/scss/bootstrap";
-@import "bootstrap";
 
-@import "base/variables.scss";
 @import "base/mixins.scss";
 @import "base/page.scss";
 
@@ -34,15 +21,15 @@ $enable-gradients:false;
 @import "layout/portfolio.scss";
 @import "layout/team.scss";
 @import "layout/contact.scss";
+@import "layout/about.scss";
 @import "layout/footer.scss";
 @import "layout/clients.scss";
 @import "layout/textblock.scss";
 
 body {
     overflow-x: hidden;
-    // font-family: "Roboto Slab","Roboto Condensed",sans-serif,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-family: 'Comfortaa', cursive;
-    webkit-tap-highlight-color: $primary;
+    font-family: $font-family-base;
+    -webkit-tap-highlight-color: $primary;
 }
 
 .post {
@@ -50,3 +37,40 @@ body {
     margin-top: 150px;
 }
 
+// Section heading component
+.section-heading {
+    text-align: center;
+    margin-bottom: $space-3xl;
+
+    h2 {
+        font-weight: $type-weight-bold;
+        margin-bottom: $space-sm;
+    }
+
+    h3 {
+        font-weight: $type-weight-normal;
+        color: $color-text-light;
+        font-size: $type-size-md;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    .section-heading {
+        text-align: center;
+        margin-bottom: 48px;
+        line-height: 45px;
+    }
+}
+
+// Section background variants
+.bg-light {
+    background-color: $gray-100;
+}
+
+// Utility: responsive images
+img {
+    max-width: 100%;
+    height: auto;
+}

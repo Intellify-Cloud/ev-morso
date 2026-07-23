@@ -1,89 +1,105 @@
 #mainNav {
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adding drop shadow */
+  background-color: $white;
+  box-shadow: $shadow-nav;
+  padding-top: $space-sm;
+  padding-bottom: $space-sm;
 }
 
-/* Hamburger Menu*/
 #mainNav .navbar-toggler {
-  font-size: 20px; /* Increased size of the hamburger menu icon */
-  padding: 15px; /* Increased padding for better touch area */
+  font-size: $type-size-lg;
+  padding: $space-sm $space-md;
   text-transform: uppercase;
-  color: #333; /* Adjusted color for better visibility */
-  border: 0;
-  background-color: transparent; /* Transparent background */
+  color: $color-text;
+  border: 1px solid $gray-300;
+  border-radius: $radius-md;
+  background-color: transparent;
+  transition: $transition-default;
 }
 
 #mainNav .navbar-toggler:hover,
 #mainNav .navbar-toggler:focus {
-  color: #primary;
+  color: $primary;
+  border-color: $primary;
 }
 
 #mainNav .navbar-brand {
-  color: #primary;
+  color: $primary;
+  font-weight: $type-weight-bold;
+  padding: 0;
 }
 
 #mainNav .navbar-brand:hover,
 #mainNav .navbar-brand:focus {
-  color: #primary;
+  color: darken($primary, 8%);
 }
 
 #mainNav .navbar-brand > img {
-  height: 50px;
+  height: 46px;
+  transition: height $transition-medium;
 }
 
 #mainNav .navbar-nav {
-  margin-right: auto; /* Right-aligning the menu options */
+  margin-right: auto;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 16px; /* Adjusting font size of menu options */
-  font-weight: bold;
-  padding: 1em 1em;
-  letter-spacing: 1.5px;
-  color: #000;
+  font-size: $type-size-xs;
+  font-weight: $type-weight-bold;
+  padding: $space-sm $space-md;
+  letter-spacing: 1px;
+  color: $color-text;
+  text-transform: uppercase;
+  border-radius: $radius-sm;
+  transition: $transition-default;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link:focus {
-  color: #primary;
+  color: $primary;
+  background-color: rgba($primary, 0.05);
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link {
+  color: $primary;
 }
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: rgba(255, 255, 255, 0.6);
-    transition: padding-top 0.3s, padding-bottom 0.3s, background-color 0.3s; /* Adding transition */
+    padding-top: $space-md;
+    padding-bottom: $space-md;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: padding-top $transition-medium, padding-bottom $transition-medium, background-color $transition-medium;
   }
 
   #mainNav .navbar-brand {
-    font-size: 2em;
-    transition: font-size 0.3s; /* Adding transition */
+    font-size: 1.75em;
+    transition: font-size $transition-medium;
   }
 
   #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em !important;
+    padding: $space-sm $space-md !important;
   }
 
   #mainNav.navbar-shrink {
-    background-color: #fff;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adding drop shadow */
+    background-color: rgba(255, 255, 255, 0.97);
+    padding-top: $space-xs;
+    padding-bottom: $space-xs;
+    box-shadow: $shadow-nav-shrink;
   }
 
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.75em;
-    padding: 8px 0;
-    transition: font-size 0.3s, padding 0.3s; /* Adding transition */
+    font-size: 1.5em;
+    padding: 4px 0;
+    transition: font-size $transition-medium, padding $transition-medium;
   }
 
   #mainNav.navbar-shrink .navbar-brand > img {
-    height: 40px;
-    transition: height 0.3s; /* Adding transition */
+    height: 38px;
   }
 
   #mainNav.navbar-shrink .navbar-nav {
-    margin-left: auto; /* Right-aligning the menu options */
+    margin-left: auto;
   }
 }

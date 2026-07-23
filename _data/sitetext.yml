@@ -40,19 +40,19 @@ calculators:
         desc: "Calculate the home loan you qualify for."
         icon: fas fa-calculator
         link: 
-          url: /affordability-calculator
+          url: /affordability-calculator/
           text: "Calculate"
       - title: "Repayment Calculator"
         desc: "Calculate your monthly bond repayments."
         icon: fas fa-calculator   
         link:
-          url: /bond-calculator
+          url: /bond-calculator/
           text: "Calculate"
       - title: "Transfer Cost Calculator"
         desc: "Calculate your registration and transfer costs."
         icon: fas fa-calculator   
         link:
-          url: /transfer-cost-calculator
+          url: /transfer-cost-calculator/
           text: "Calculate"
 
 
@@ -65,13 +65,13 @@ more-calculators:
         desc: "Calculate how much you need to save for your deposit."
         icon: fas fa-calculator   
         link:
-          url: /deposit-savings-calculator
+          url: /deposit-savings-calculator/
           text: "Calculate"
       - title: "Amortisation Calculator"
         desc: "Calculate how your repayment is structured."
         icon: fas fa-calculator   
         link:
-          url: /amortisation-calculator
+          url: /amortisation-calculator/
           text: "Calculate"
 
 textblock:
@@ -110,6 +110,7 @@ portfolio:
     
 about:
     title: "About Us"
+    text: "Experienced property finance specialists helping buyers compare bank offers and secure competitive home loan terms."
     text2: "evo Mortgage Solutions is led by Verna van Heerden, who brings over 30 years of experience in the home loan industry, including 18 years at a major bank. She is joined by Sheugnette Scheepers, who has more than 20 years of expertise in bond origination. Together, our team combines extensive knowledge, experience, and industry connections to provide fast, efficient service and secure the best possible home loan offers for our clients—whether they’re buyers, sellers, or real estate professionals. We handle all the paperwork, expertly structure and submit applications, and negotiate the most favorable loan terms and interest rates to ensure a seamless, top-notch outcome.
     <br> <br>
     As a home loans brokerage, we are accredited by all major banks, including ABSA, FNB, Nedbank, and Standard Bank, as well as Investec, Sentinel Homes, and Hip Housing.
@@ -196,16 +197,57 @@ contact:
     section: team
     
 footer:
-    legal: "Powered by evo Homeloans"
+    copyright_prefix: "Copyright"
+    description: "evo Mortgage Solutions provides expert home loan and bond origination assistance in Pretoria. Compare bank quotes, get pre-qualified, and secure competitive home finance with experienced specialists."
+    privacy_label: "Privacy Policy"
+    privacy_url: "/privacy-statement/"
+    terms_label: "Terms and Conditions"
+    terms_url: "/legal/"
+    social_label: "Follow us"
+    
+    sections:
+      - title: "Company"
+        links:
+          - text: "Home"
+            url: "/"
+          - text: "Privacy Policy"
+            url: "/privacy-statement/"
+          - text: "Terms and Conditions"
+            url: "/legal/"
+
+      - title: "Calculators"
+        links:
+          - text: "Affordability Calculator"
+            url: "/affordability-calculator/"
+          - text: "Bond Calculator"
+            url: "/bond-calculator/"
+          - text: "Transfer Cost Calculator"
+            url: "/transfer-cost-calculator/"
+          - text: "Deposit Savings Calculator"
+            url: "/deposit-savings-calculator/"
+          - text: "Amortisation Calculator"
+            url: "/amortisation-calculator/"
+
+      - title: "Get in touch"
+        links:
+          - text: "+27 83 447 6674"
+            url: "tel:+27834476674"
+            external: true
+          - text: "verna.vanheerden@evogroup.co.za"
+            url: "mailto:verna.vanheerden@evogroup.co.za"
+            external: true
+    
     social:
-      # - url: https://twitter.com/twitter
-      # icon: "fab fa-twitter"  
-      - url: https://www.facebook.com/Evomortgagesolutions/
+      - title: "Facebook"
+        url: "https://www.facebook.com/Evomortgagesolutions/"
         icon: "fab fa-facebook-f"
-      - url: https://api.whatsapp.com/send?phone=27834476674
+        external: true
+      - title: "WhatsApp"
+        url: "https://api.whatsapp.com/send?phone=27834476674"
         icon: "fab fa-whatsapp"
-      # - url: https://instagram.com
-      #   icon: "fab fa-instagram"
-
-
+        external: true
+    
+    credits:
+      - text: "Powered by evo Homeloans"
+        url: "https://evohomeloans.co.za"
 
