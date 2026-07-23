@@ -1,49 +1,100 @@
-.calculators-heading {
-  margin: $space-2xl 0;
-  text-transform: uppercase;
-  font-size: $type-size-xl;
-  font-weight: bold;
-  color: $color-text;
+// ============================================================
+// Calculators Section
+// White cards with teal accent, CSS grid, standard button system
+// ============================================================
+
+// Shared card deck grid (used by both calculator sections)
+.calculators.card-deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: $space-lg;
 }
 
+// Individual cards
 .calculators .card {
   border: none;
-  background-color: $primary;
+  border-top: 4px solid $primary;
+  background-color: $white;
   border-radius: $radius-card;
   box-shadow: $shadow-card;
-  margin-bottom: $space-2xl;
-  transition: $transition-default ease;
-}
+  transition: $transition-default;
 
-.calculators .card:hover {
-  transform: translateY(-5px);
-  box-shadow: $shadow-card-hover;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: $shadow-card-hover;
+  }
 }
 
 .calculators .card-body {
-  border: none;
-  padding: $space-2xl;
+  padding: $space-2xl $space-xl $space-lg;
 }
 
 .calculators .card-footer {
   border: none;
   background: none;
-  padding: $space-lg;
+  padding: 0 $space-xl $space-xl;
   text-align: center;
 }
 
-.calculators .btn {
-  border-radius: $radius-pill;
-  background-color: $white;
-  color: $primary;
-  padding: 10px 20px;
-  font-size: $type-size-sm;
-  text-transform: uppercase;
-  border: 2px solid $primary;
-  transition: $transition-default ease;
+// Icon treatment — light teal circle with teal icon
+.calculators .fa-stack {
+  margin-bottom: $space-md;
+
+  .fa-circle {
+    color: rgba($primary, 0.12) !important;
+  }
+
+  .fa-stack-1x {
+    color: $primary;
+    font-size: 0.6em;
+
+    // Override fa-inverse (white) so icon inherits teal
+    &.fa-inverse {
+      color: $primary;
+    }
+  }
 }
 
-.calculators .btn:hover {
-  background-color: $primary;
-  color: $white;
+// Card heading
+.calculators .service-heading {
+  margin: $space-md 0 $space-sm;
+  font-weight: $type-weight-bold;
+  font-size: $type-size-lg;
+}
+
+// Card description
+.calculators .text-muted {
+  font-size: $type-size-xs;
+  line-height: $line-height-base;
+  color: $color-text-light;
+
+  p {
+    max-width: none;
+    margin-bottom: 0;
+  }
+}
+
+// Buttons — reuse global btn-primary system
+.calculators .btn {
+  width: 100%;
+  border-radius: $radius-md;
+}
+
+// Section heading overrides within calculator sections
+#calculators .section-heading,
+#more-calculators .section-heading {
+  margin-bottom: $space-2xl;
+}
+
+// ============================================================
+// Mobile adjustments
+// ============================================================
+@media (max-width: $breakpoint-sm) {
+  .calculators .card-body {
+    padding: $space-xl $space-md $space-md;
+  }
+
+  .calculators .card-footer {
+    padding: 0 $space-md $space-md;
+  }
 }

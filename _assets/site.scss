@@ -25,6 +25,7 @@ $input-height:calc(#{$input-height-inner} + #{$input-height-border});
 @import "layout/footer.scss";
 @import "layout/clients.scss";
 @import "layout/textblock.scss";
+@import "layout/calculators.scss";
 
 body {
     overflow-x: hidden;

@@ -38,19 +38,19 @@ calculators:
     list:
       - title: "Bond Calculator"
         desc: "Calculate the home loan you qualify for."
-        icon: fas fa-calculator
+        icon: fas fa-home
         link: 
           url: /affordability-calculator/
           text: "Calculate"
       - title: "Repayment Calculator"
         desc: "Calculate your monthly bond repayments."
-        icon: fas fa-calculator   
+        icon: fas fa-chart-line
         link:
           url: /bond-calculator/
           text: "Calculate"
       - title: "Transfer Cost Calculator"
         desc: "Calculate your registration and transfer costs."
-        icon: fas fa-calculator   
+        icon: fas fa-file-invoice
         link:
           url: /transfer-cost-calculator/
           text: "Calculate"
@@ -63,13 +63,13 @@ more-calculators:
     list:
       - title: "Deposit Savings Calculator"
         desc: "Calculate how much you need to save for your deposit."
-        icon: fas fa-calculator   
+        icon: fas fa-piggy-bank
         link:
           url: /deposit-savings-calculator/
           text: "Calculate"
       - title: "Amortisation Calculator"
         desc: "Calculate how your repayment is structured."
-        icon: fas fa-calculator   
+        icon: fas fa-table
         link:
           url: /amortisation-calculator/
           text: "Calculate"
